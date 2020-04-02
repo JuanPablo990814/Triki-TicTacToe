@@ -1,0 +1,5 @@
+D:\Documentos\Visual Studio\Triki\Controlador\bin\Debug\Controlador.dll
+D:\Documentos\Visual Studio\Triki\Controlador\bin\Debug\Controlador.pdb
+D:\Documentos\Visual Studio\Triki\Controlador\obj\Debug\Controlador.csprojAssemblyReference.cache
+D:\Documentos\Visual Studio\Triki\Controlador\obj\Debug\Controlador.dll
+D:\Documentos\Visual Studio\Triki\Controlador\obj\Debug\Controlador.pdb

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Triki.exe" version="1.0.0.0" publicKeyToken="bcfeaaaa87e1b120" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="triki.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Triki" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Triki.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu_UI_v1.5.3.dll" size="242176">
+      <assemblyIdentity name="Bunifu_UI_v1.5.3" version="1.5.3.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8bPg8nUKkQPkampKNPHPnRd3lyX5gELMJHXsZkhIAc8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Controlador.dll" size="7680">
+      <assemblyIdentity name="Controlador" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>207ufHqOmTk+8pRxIQ9Cmqb5Jr3iQtUneUn6Ox5fBcI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Triki.exe" size="845224">
+      <assemblyIdentity name="Triki" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KlxXz6tNIfDjERYvKuqlTBWAHJFUFGz7XFWR0T+JQjw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Triki.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="triki.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BVsdDBxjikIr3IKM0VPfctQYRLK08Gs8WXD8Ff8ZTBg=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=H4PP3NS\User" issuerKeyHash="1f90851974280c5ab502161080aee1f9925631be" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>lr9UH/GM5VrzzA3R40jYSNsck9338pLcE6SmdXHMeBA=</DigestValue></Reference></SignedInfo><SignatureValue>D/kK7EZ0LEggubTJs742hZFkUwbwIY0/uflPSm2sUSU7xOkK/p0FhpBQ3kIhl4o5S8FCzmkFiMjLDoIF4y6EoRBBYR4+SyDW3LbOes5yXqFBVFOJgD/MuQi96vJWjNmChguretuHAuiHtTRRNqVh/j5GBUN9apMdS7ji9l5wg50=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>4b3MmlrR8qpMO9TYdBUZ1QlAa2xxbYOBN9vfePt5YSAJjMfcsAUrIVvNSptysjwO8yL7/5Ssf0XXVEJfnei2dd/w7P3zJNQUUbxV1uF3ItBMA8wX9bLr+IBrbbZQk5w1q6xz7cdmt0vA6Bg8SFCPwJs9OsytMIEBUUd6RjR5RZ0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1078cc7175a6a413dc92f2f7dd931cdb48d848e3d10dccf35ae58cf11f54bf96" Description="" Url=""><as:assemblyIdentity name="Triki.exe" version="1.0.0.0" publicKeyToken="bcfeaaaa87e1b120" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=H4PP3NS\User</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>cjXNkUqrWlA9YhkZqw1Sd0X47eJXyeLcIA893hQ4x5w=</DigestValue></Reference></SignedInfo><SignatureValue>P2bMVm/zZvQp6rftVX27wWAvFJmJqGIiDVaSeYG8C4WcTerFsfZ0c4P9OU7JjL2L/qZlARwIsLHw7KZoFsexTRlNIIdRQBQk1TJni+qrsW4gUK3kEppQtvJsqyq9U3aiBSiSBT3NUm8MWF5P9RMk/tMG6ie5zrRn0lg7ID78ybY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>4b3MmlrR8qpMO9TYdBUZ1QlAa2xxbYOBN9vfePt5YSAJjMfcsAUrIVvNSptysjwO8yL7/5Ssf0XXVEJfnei2dd/w7P3zJNQUUbxV1uF3ItBMA8wX9bLr+IBrbbZQk5w1q6xz7cdmt0vA6Bg8SFCPwJs9OsytMIEBUUd6RjR5RZ0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQUHKgp9NbRbVPech+DBOSbjANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgASAA0AFAAUAAzAE4AUwBcAFUAcwBlAHIwHhcNMjAwNDAyMDYzODUzWhcNMjEwNDAyMTIzODUzWjAjMSEwHwYDVQQDHhgASAA0AFAAUAAzAE4AUwBcAFUAcwBlAHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOG9zJpa0fKqTDvU2HQVGdUJQGtscW2DgTfb33j7eWEgCYzH3LAFKyFbzUqbcrI8DvMi+/+UrH9F11RCX53otnXf8Oz98yTUFFG8VdbhdyLQTAPMF/Wy6/iAa222UJOcNausc+3HZrdLwOgYPEhQj8CbPTrMrTCBAVFHekY0eUWdAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAGC0d0weni7h6KrFHaY6mBOgTT+DhSRklz3eQ3eMHoXq2DtSlYU7FAs/NgXyrN6k6mOQ33RjW3DhAzPRSuiTOHuZZcxuHmUX9z3dXS/VlHtWTlRWNVm9iZYKsigM5IjR1wRj19i+JloAMTlPIyROiirEGplITimOs9xIYXh/LX8A=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
